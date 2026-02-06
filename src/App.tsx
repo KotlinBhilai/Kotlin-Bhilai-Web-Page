@@ -52,6 +52,7 @@ const pastEvents: EventItem[] = [
 ]
 
 function App() {
+  const assetBase = import.meta.env.BASE_URL
   const [menuOpen, setMenuOpen] = useState(false)
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null)
@@ -95,7 +96,7 @@ function App() {
       <header className="sticky top-0 z-50 border-b border-slate-200/60 bg-white/75 backdrop-blur-xl dark:border-white/10 dark:bg-ink-900/80">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href="#home" className="flex items-center gap-3">
-            <img src="/kotlin-logo.svg" alt="Kotlin logo" className="h-8 w-auto" />
+            <img src={`${assetBase}kotlin-logo.svg`} alt="Kotlin logo" className="h-8 w-auto" />
             <span className="text-sm font-bold tracking-wide sm:text-base">Bhilai KUG</span>
           </a>
 
@@ -176,7 +177,11 @@ function App() {
 
             <div className="relative rounded-3xl border border-white/30 bg-gradient-to-br from-brand-500/20 via-cyan-400/15 to-pink-500/20 p-8 shadow-2xl backdrop-blur-xl">
               <div className="absolute -right-6 -top-6 h-16 w-16 rounded-full bg-pink-500/40 blur-2xl" aria-hidden="true" />
-              <img src="/hero-kodee.png" alt="Kodee mascot" className="mx-auto w-full max-w-sm drop-shadow-2xl" />
+              <img
+                src={`${assetBase}hero-kodee.png`}
+                alt="Kodee mascot"
+                className="mx-auto w-full max-w-sm drop-shadow-2xl"
+              />
             </div>
           </div>
         </section>
