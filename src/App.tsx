@@ -85,7 +85,7 @@ function App() {
       return
     }
 
-    window.location.href = `mailto:hello@bhilaikug.org?subject=Newsletter Subscription&body=Please add ${newsletterText} to Bhilai KUG updates.`
+    window.location.href = `mailto:sauravgupta1375@gmail.co?subject=Newsletter Subscription&body=Please add ${newsletterText} to Bhilai KUG updates.`
     setNewsletterText('')
   }
 
@@ -218,7 +218,7 @@ function App() {
                   <span className="font-semibold">Organizer Name & Surname:</span> Saurav Gupta
                 </li>
                 <li>
-                  <span className="font-semibold">Contact Email:</span> hello@bhilaikug.org
+                  <span className="font-semibold">Contact Email:</span> sauravgupta1375@gmail.co
                 </li>
                 <li>
                   <span className="font-semibold">Website URL:</span> {websiteUrl}
@@ -261,7 +261,7 @@ function App() {
               <div>
                 <p className="text-2xl font-semibold">Saurav Gupta</p>
                 <p className="mt-2 flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                  <Mail size={16} /> hello@bhilaikug.org
+                  <Mail size={16} /> sauravgupta1375@gmail.co
                 </p>
               </div>
               <div className="flex gap-3">
