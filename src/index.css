@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased transition-colors duration-300;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.dark body {
+  @apply bg-ink-900 text-slate-100;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Sora', sans-serif;
+}
+
+.glass-card {
+  @apply border border-white/30 bg-white/60 shadow-xl backdrop-blur-xl;
+}
+
+.dark .glass-card {
+  @apply border-white/10 bg-white/5;
+}
+
+.section-reveal {
+  animation: slide-up 700ms ease-out both;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
