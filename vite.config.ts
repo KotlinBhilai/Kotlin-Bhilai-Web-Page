@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 const repo = 'bhilai-kotlin-user-group'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS ? `/${repo}/` : '/'
-})
+  base: command === 'build' ? `/${repo}/` : '/'
+}))
