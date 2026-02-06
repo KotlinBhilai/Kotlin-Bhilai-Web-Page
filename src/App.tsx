@@ -60,7 +60,7 @@ function App() {
 
   const websiteUrl = useMemo(() => {
     if (typeof window === 'undefined') {
-      return 'https://sauravgx.github.io/bhilai-kotlin-user-group/'
+      return 'https://kotlinbhilai.github.io/Kotlin-Bhilai-Web-Page/'
     }
 
     return `${window.location.origin}${window.location.pathname}`

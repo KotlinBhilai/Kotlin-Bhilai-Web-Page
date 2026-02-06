@@ -45,7 +45,7 @@ npm run preview
 
 Expected deployed URL:
 
-`https://sauravgx.github.io/bhilai-kotlin-user-group/`
+`https://kotlinbhilai.github.io/Kotlin-Bhilai-Web-Page/`
 
 ## Update Content
 
